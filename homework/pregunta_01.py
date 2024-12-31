@@ -16,8 +16,7 @@ def pregunta_01():
     df['barrio'] = df['barrio'].astype(str)
     df['barrio'] = df['barrio'].str.replace('_', ' ').str.replace('-', ' ')
     df['barrio'] = df['barrio'].str.lower()
-    df['barrio'] = df['barrio'].str.replace(r'no\.\s*(\d+)', r'no\1', regex=True)
-    
+        
     #df["comuna_ciudadano].info()
     df['comuna_ciudadano'] = df['comuna_ciudadano'].astype(int)
 
